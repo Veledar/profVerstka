@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Корзина</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
 </head>
@@ -39,83 +41,138 @@
     <div class="container newArrivals">
         <h1>New Arrivals</h1>
         <div>
-            <a href="#">Home /</a>
-            <a href="#">Men /</a>
+            <a href="#">Home</a><span> /</span>
+            <a href="#">Men</a><span> /</span>
             <a href="#">New Arrivals</a>
         </div>
     </div>
 </nav>
 
-
-
-<main>
-    <table>
-        <tr>
-            <th>Product Details</th>
-            <th>unite Price</th>
-            <th>Quantity</th>
-            <th>shipping</th>
-            <th>Subtotal</th>
-            <th>ACTION</th>
-        </tr>
-        <tr>
-            <td>
-                <article>
-                    <h2>Mango  People  T-shirt</h2>
-                    <p>Color:   Red</p>
-                    <p>Size:   Xll</p>
-                </article>
-            </td>
-            <td>$150</td>
-            <td>2</td>
-            <td>FREE</td>
-            <td>$300</td>
-            <td><i class="fas fa-times-circle"></i></td>
-        </tr>
-        <tr>
-            <td>
-                <article>
-                    <h2>Mango  People  T-shirt</h2>
-                    <p>Color:   Red</p>
-                    <p>Size:   Xll</p>
-                </article>
-            </td>
-            <td>$150</td>
-            <td>2</td>
-            <td>FREE</td>
-            <td>$300</td>
-            <td><i class="fas fa-times-circle"></i></td>
-        </tr>
-        <tr>
-            <td>
-                <article>
-                    <h2>Mango  People  T-shirt</h2>
-                    <p>Color:   Red</p>
-                    <p>Size:   Xll</p>
-                </article>
-            </td>
-            <td>$150</td>
-            <td>2</td>
-            <td>FREE</td>
-            <td>$300</td>
-            <td><i class="fas fa-times-circle"></i></td>
-        </tr>
-    </table>
-
-    <aside>
-        <div>cLEAR SHOPPING CART</div>
-        <div>cONTINUE sHOPPING</div>
-    </aside>
-
-    <form>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
-        <p></p>
-    </form>
+<main class="container shoppingCart">
+    <div class="shoppingGridRow shoppingGridRowHead">
+        <div>Product details</div>
+        <div class="productPrice">Unite price</div>
+        <div class="productQty">Quantity</div>
+        <div class="productShipping">Shipping</div>
+        <div class="productSubtotal">Subtotal</div>
+        <div class="productAction">Action</div>
+    </div>
+    <section class="shoppingGridRow">
+        <div class="product">
+            <img src="img/Layer_43.png" alt="фото">
+            <div class="productDetails">
+                <h2 class="productName">
+                    Mango  People  T-shirt
+                </h2>
+                <div class="productColor">
+                    <span class="productParam">Color:</span> Red
+                </div>
+                <div class="productSize">
+                    <span class="productParam">Size:</span> XII
+                </div>
+            </div>
+        </div>
+        <div class="productPrice">$150</div>
+        <div class="productQty">
+            <input type="text" value="2">
+        </div>
+        <div class="productShipping">FREE</div>
+        <div class="productSubtotal">$300</div>
+        <div class="productAction">
+            <i class="fas fa-times-circle"></i>
+        </div>
+    </section>
+    <section class="shoppingGridRow">
+        <div class="product">
+            <img src="img/Layer_44.png" alt="фото">
+            <div class="productDetails">
+                <h2 class="productName">
+                    Mango  People  T-shirt
+                </h2>
+                <div class="productColor">
+                    <span class="productParam">Color:</span> Red
+                </div>
+                <div class="productSize">
+                    <span class="productParam">Size:</span> XII
+                </div>
+            </div>
+        </div>
+        <div class="productPrice">$150</div>
+        <div class="productQty">
+            <input type="text" value="2">
+        </div>
+        <div class="productShipping">FREE</div>
+        <div class="productSubtotal">$300</div>
+        <div class="productAction">
+            <i class="fas fa-times-circle"></i>
+        </div>
+    </section>
+    <section class="shoppingGridRow">
+        <div class="product">
+            <img src="img/Layer_45.png" alt="фото">
+            <div class="productDetails">
+                <h2 class="productName">
+                    Mango  People  T-shirt
+                </h2>
+                <div class="productColor">
+                    <span class="productParam">Color:</span> Red
+                </div>
+                <div class="productSize">
+                    <span class="productParam">Size:</span> XII
+                </div>
+            </div>
+        </div>
+        <div class="productPrice">$150</div>
+        <div class="productQty">
+            <input type="text" value="2">
+        </div>
+        <div class="productShipping">FREE</div>
+        <div class="productSubtotal">$300</div>
+        <div class="productAction">
+            <i class="fas fa-times-circle"></i>
+        </div>
+    </section>
 </main>
 
+<div class="container shoppingBtnsWrap">
+    <button>Clear shopping cart</button>
+    <button>Continue shopping</button>
+</div>
 
-
+<div class="container checkOutWrap">
+    <section class="shippingAddressWrap">
+        <form>
+            <h2>Shipping adress</h2>
+            <select required>
+                <option>Bangladesh</option>
+                <option>Russia</option>
+                <option>Australia</option>
+            </select>
+            <input required type="text" placeholder="State">
+            <input required type="number" placeholder="Postcode / Zip">
+            <button>Get a quote</button>
+        </form>
+    </section>
+    <section class="couponDiscountWrap">
+        <h2>Coupon discount</h2>
+        <form>
+            <label for="state">Enter your coupon code if you have one</label>
+            <input id="state" type="text" placeholder="State">
+            <button>Apply coupon</button>
+        </form>
+    </section>
+    <div class="grandTotalWrap">
+        <div class="grandTotalSub">
+            <span>Sub total</span>
+            <span>$900</span>
+        </div>
+        <div class="grandTotalGrand">
+            <span>Grand total</span>
+            <span>$900</span>
+        </div>
+        <button>Proceed to checkout</button>
+    </div>
+</div>
 
 <div class="subscribeWrap">
     <div class="container subscribe">
@@ -212,5 +269,9 @@
         </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
