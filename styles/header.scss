@@ -68,3 +68,28 @@
     border: none;
   }
 }
+.headerLine {
+  border-bottom: 1px solid #ececec;
+}
+.topNav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  a:not(:last-child) {
+    margin-right: 45px;
+  }
+  a:hover {
+    border-bottom: 3px solid #f16d7f;
+    padding-top: 12px;
+  }
+}
